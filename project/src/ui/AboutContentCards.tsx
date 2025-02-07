@@ -1,3 +1,5 @@
+"use client"
+
 type props={
     heading:string,
     content:string
@@ -6,7 +8,7 @@ type props={
 export const AboutContentCards:React.FC<props>=({heading,content})=>{
     return(
         <>
-            <div className="h-full flex flex-col w-1/4 mx-2">
+            <div className="flex flex-col w-1/4 mx-2 border-b-2 border-slate-200">
                 <h3 className="font-poppins text-xl font-bold">{heading}</h3>
                 <p className=" font-montserrat text sm text-slate-300/80">{content}</p>
             </div>

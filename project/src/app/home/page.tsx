@@ -1,13 +1,15 @@
 import { AboutSection } from "@/components/AboutSection";
+import { FeatureSection } from "@/components/FeatureSection";
 import { MainLeftSection } from "@/components/MainLeftSection";
 import { NavBar } from "@/components/NavBar";
 import { FloatingCards } from "@/ui/FloatingCards";
+import { GridBG } from "@/ui/GridBG";
 import Image from 'next/image';
 
 const Home = () => {
     return (
         <div className="relative w-screen h-[100vh] bg-gray-100 overflow-x-hidden">
-            <div className="z-1 absolute inset-0 w-full h-full bg-[radial-gradient(circle,_#9ca3af_2px,_transparent_1px)] bg-[size:24px_24px] opacity-30"></div>
+            <GridBG radius={"2px"} size={"24px_24px"}/>
             <NavBar />
             <section className="w-screen h-[100vh] overflow-hidden">
                 <div className="flex w-full h-full bg-gray-100 mt-4 overflow-hidden">
@@ -21,6 +23,12 @@ const Home = () => {
             </section>
             <section className=" bg-white flex flex-col w-screen h-[100vh]">
                 <AboutSection/>
+            </section>
+            <section className="w-screen h-screen flex bg-white justify-center">
+              <FeatureSection position={"left"}/>  
+            </section>
+            <section className="w-screen h-screen flex bg-white justify-center -mt-16">
+              <FeatureSection position={"right"}/>  
             </section>
         </div>
     );
