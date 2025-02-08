@@ -1,15 +1,20 @@
+"use client"
+
 import { AboutSection } from "@/components/AboutSection";
 import { FeatureSection } from "@/components/FeatureSection";
 import { MainLeftSection } from "@/components/MainLeftSection";
 import { NavBar } from "@/components/NavBar";
+import { PricingSection} from "@/components/PricingSection";
 import { FloatingCards } from "@/ui/FloatingCards";
 import { GridBG } from "@/ui/GridBG";
 import Image from 'next/image';
 
 const Home = () => {
     return (
-        <div className="relative w-screen h-[100vh] bg-gray-100 overflow-x-hidden">
-            <GridBG radius={"2px"} size={"24px_24px"}/>
+        <div className="relative w-screen h-screen bg-gray-100 overflow-x-hidden">
+            <GridBG size="24px_24px" radius="2px"/>
+            {/* <div className={`z-1 absolute inset-0 w-full h-full bg-[radial-gradient(circle,_#9ca3af_2px,_transparent_1px)] bg-[size:24px_24px] opacity-30`}></div>         */}
+
             <NavBar />
             <section className="w-screen h-[100vh] overflow-hidden">
                 <div className="flex w-full h-full bg-gray-100 mt-4 overflow-hidden">
@@ -24,11 +29,13 @@ const Home = () => {
             <section className=" bg-white flex flex-col w-screen h-[100vh]">
                 <AboutSection/>
             </section>
-            <section className="w-screen h-screen flex bg-white justify-center">
-              <FeatureSection position={"left"}/>  
-            </section>
-            <section className="w-screen h-screen flex bg-white justify-center -mt-16">
+            <section className="w-screen h-[200vh] flex flex-col bg-white justify-center items-center">
+              <FeatureSection position={"left"}/>
               <FeatureSection position={"right"}/>  
+            </section>
+            <section className="relative w-screen h-[200vh]">
+                <PricingSection/>
+
             </section>
         </div>
     );

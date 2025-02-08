@@ -6,7 +6,7 @@ type props={
 
 export const SectionHeadingBUtton:React.FC<props>=({Heading})=>{
     return(
-        <div className=" border border-slate-600/30 drop-shadow-md px-6 py-2 rounded-xl bg-white font-montserrat font-400">
+        <div className=" flex justify-center border border-slate-600/30 drop-shadow-md px-6 py-2 rounded-xl bg-white font-montserrat font-semibold text-xl font-400">
             {Heading}
         </div>
     )
