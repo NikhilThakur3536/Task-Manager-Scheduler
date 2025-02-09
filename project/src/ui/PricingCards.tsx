@@ -1,21 +1,11 @@
 import { BulletList } from "./BulletList"
 import { SectionHeadingBUtton } from "./SectionHeadingButton"
-import { Feature } from "@/data/PricingData";
+import { PricingPlan } from "@/data/Data";
 
-
-type props={
-    heading:string,
-    price:string,
-    tagline:string,
-    buttonheading:string
-    fill:"Yes"|"No",
-    features:Feature[]
-}
-
-export const PricingCards = ({ heading, price, tagline, buttonheading, features, fill }: props) => {
+export const PricingCards = ({ heading, price, tagline, buttonheading, features, fill }: PricingPlan) => {
     return (
         <div className="z-10 w-[400px] h-[500px]">
-            <div className="flex flex-col w-[95%] h-full rounded-xl border-2 border-gray-400/50 bg-white overflow-hidden">
+            <div className="flex flex-col w-[95%] h-full rounded-xl border-2 border-gray-400/50 bg-white overflow-hidden drop-shadow-lg">
                 <h3 className="font-poppins font-semibold text-4xl mt-2 mb-4 ml-4">{heading}</h3>
                 <h3 className="font-poppins font-bold text-6xl mt-2 mb-2 ml-4">{price}</h3>
                 <h4 className="font-montserrat text-gray-400 text-sm mb-10 ml-4">{tagline}</h4>

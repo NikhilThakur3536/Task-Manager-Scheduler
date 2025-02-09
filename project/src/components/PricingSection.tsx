@@ -3,7 +3,7 @@
 import { GridBG } from "@/ui/GridBG"
 import { PricingCards } from "@/ui/PricingCards"
 import { SectionHeadingBUtton } from "@/ui/SectionHeadingButton"
-import { pricingData} from "@/data/PricingData"
+import { pricingData} from "@/data/Data"
 
 export const PricingSection=()=>{
     return(

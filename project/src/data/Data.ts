@@ -47,3 +47,15 @@ export const pricingData: PricingPlan[] = [
         ]
     }
 ];
+
+export type Content={
+    id:number,
+    heading:string,
+    content:string
+}
+
+export const ContentData:Content[]=[
+    {id:11, content:"hyy there", heading:"fuck off"},
+    {id:12, content:"hyy there", heading:"feature"},
+    {id:13, content:"hyy there", heading:"feature"}
+]

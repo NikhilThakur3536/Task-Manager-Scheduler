@@ -20,8 +20,8 @@ const Home = () => {
                 <div className="flex w-full h-full bg-gray-100 mt-4 overflow-hidden">
                     <MainLeftSection />
                     <div className="relative flex z-10 w-[50%] h-full">                        
-                        <div className="z-20"><Image src='/images/rightmainsection.png' alt="right section image" width={600} height={100} /></div>
-                        <FloatingCards color={"bg-sky-200/80"} height={180} width={250} y="400px" x="-80px" y_animate={[10,0,10]}/>
+                        <div className="z-20 h-full ml-12 transform translate-x-4 -translate-y-8"><Image src='/images/longmobile.png' alt="right section image" width={500} height={100} /></div>
+                        <FloatingCards color={"bg-sky-200/80"} height={180} width={250} y="400px" x="-70px" y_animate={[10,0,10]}/>
                         <FloatingCards  color={"bg-rose-200/80"} height={170} width={380} y="30px" x="320px" y_animate={[-10,0,-10]}/>
                     </div>
                 </div>
