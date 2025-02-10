@@ -1,10 +1,12 @@
 'use client';
 
+import { ProgressBar } from "@/ui/ProgressBar";
+
 export const MainLeftSection= ()=>{
     return(
         <div className=" flex justify-center items-center w-[50%] h-full bg-gray-100">
                         <div className="z-10 flex flex-col w-[70%] h-[99%] bg-white rounded-xl border-1 border-slate-100 drop-shadow-lg">
-                            <div className=" w-[50%] h-[42px] bg-sky-100 mt-14 ml-8 rounded-xl"></div>
+                            <ProgressBar duration={5} />
                             <div><h1 className="font-bold text-5xl font-poppins ml-8 mt-6">Supercharge Team’s<br/> Productivity,<br/>Simplify Task <br/>Management Today</h1></div>
                             <div>
                                 <ul className=" font-montserrat font-[300] text-xl text-slate-600 ml-8 mt-8">

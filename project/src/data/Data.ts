@@ -3,6 +3,10 @@ import { FaRegCalendar } from "react-icons/fa6";
 import { TbFileAnalytics } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
 import { IconType } from "react-icons";
+import { FaBrain } from "react-icons/fa";
+import { IoCodeSlashSharp } from "react-icons/io5";
+import { GrDeploy } from "react-icons/gr";
+import { color } from "framer-motion";
 
 export type Feature = {
     id: number;
