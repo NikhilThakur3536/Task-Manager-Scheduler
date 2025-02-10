@@ -1,3 +1,9 @@
+import { AiOutlineHome } from "react-icons/ai";
+import { FaRegCalendar } from "react-icons/fa6";
+import { TbFileAnalytics } from "react-icons/tb";
+import { CgProfile } from "react-icons/cg";
+import { IconType } from "react-icons";
+
 export type Feature = {
     id: number;
     text: string;
@@ -59,3 +65,9 @@ export const ContentData:Content[]=[
     {id:12, content:"hyy there", heading:"feature"},
     {id:13, content:"hyy there", heading:"feature"}
 ]
+
+export type IconProps={
+    icon:IconType,
+    label:string
+}
+export const iconArr:IconProps[]=[{icon:AiOutlineHome,label:"Home"},{icon:FaRegCalendar,label:"Calendar"},{icon:TbFileAnalytics,label:"Analytics"},{icon:CgProfile,label:"Profile"}]
