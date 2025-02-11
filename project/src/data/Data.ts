@@ -88,53 +88,59 @@ export type FadingCardsProps={
     heading:string,
     content:string,
     progress:string,
-    y:number
+    y:number,
+    bg:string
 }
 
 export const FadingCardsArray:FadingCardsProps[]=[
     {
         Opacity:1,
-    delay:0,
-    icon:MdOutlineDownloading,
-    heading:"Heading ",
-    content:"Content",
-    progress:"In Progress",
-    y:0     
+        delay:0,
+        icon:MdOutlineDownloading,
+        heading:"Heading ",
+        content:"Content",
+        progress:"In Progress",
+        y:0,  
+        bg:"bg-purple-700"   
     },
     {
-        Opacity:.7,
+        Opacity:.5,
         delay:.6,
         icon:MdOutlineDownloading,
         heading:"Heading ",
         content:"Content",
         progress:"In Progress",
-        y:130       
+        y:130,
+        bg:"bg-rose-700"       
     },
     {
-        Opacity:.6,
+        Opacity:.4,
         delay:.7,
         icon:MdOutlineDownloading,
         heading:"Heading ",
         content:"Content",
         progress:"In Progress",
-        y:260      
+        y:260,
+        bg:"bg-emerald-700"      
     },
     {
-        Opacity:.5,
+        Opacity:.3,
         delay:.8,
         icon:MdOutlineDownloading,
         heading:"Heading ",
         content:"Content",
         progress:"In Progress",
-        y:390          
+        y:390,
+        bg:"bg-cyan-700"          
     },
     {
-        Opacity:.4,
+        Opacity:.2,
         delay:.9,
         icon:MdOutlineDownloading,
         heading:"Heading ",
         content:"Content",
         progress:"In Progress",
-        y:520       
+        y:520,
+        bg:"bg-yellow-700"       
     }
 ]
