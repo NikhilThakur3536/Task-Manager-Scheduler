@@ -16,7 +16,9 @@ export const AboutSection=()=>{
             </div>
             <div className=" flex items-center justify-center w-full h-[55%] mt-4">
                 <div className=" relative w-[80%] h-full bg-slate-100 rounded-lg border border-slate-400/30 overflow-hidden">
-                <GridBG size={"14px_14px"} radius={"1px"}/>
+                {/* <GridBG size={"14px_14px"} radius={"1px"}/> */}
+                <div className={`z-1 absolute inset-0 w-full h-full bg-[radial-gradient(circle,_#9ca3af_1px,_transparent_1px)] bg-[size:14px_14px] opacity-30`}></div>        
+
                 <div><Image className=" absolute z-20 ml-8 transform -translate-y-20" src="/images/aboutsectionmobile.png" width={400} height={700} alt="mobile"/></div>
                 </div>
             </div>

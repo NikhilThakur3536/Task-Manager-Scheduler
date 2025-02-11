@@ -3,15 +3,14 @@ import { FaRegCalendar } from "react-icons/fa6";
 import { TbFileAnalytics } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
 import { IconType } from "react-icons";
-import { FaBrain } from "react-icons/fa";
-import { IoCodeSlashSharp } from "react-icons/io5";
-import { GrDeploy } from "react-icons/gr";
-import { color } from "framer-motion";
+import { MdOutlineDownloading } from "react-icons/md";
+
 
 export type Feature = {
     id: number;
     text: string;
 };
+
 
 export type PricingPlan = {
     heading: string;
@@ -21,6 +20,7 @@ export type PricingPlan = {
     fill: "Yes" | "No";
     features: Feature[];
 };
+
 
 export const pricingData: PricingPlan[] = [
     {
@@ -58,6 +58,8 @@ export const pricingData: PricingPlan[] = [
     }
 ];
 
+
+
 export type Content={
     id:number,
     heading:string,
@@ -70,8 +72,69 @@ export const ContentData:Content[]=[
     {id:13, content:"hyy there", heading:"feature"}
 ]
 
+
 export type IconProps={
     icon:IconType,
     label:string
 }
+
+
 export const iconArr:IconProps[]=[{icon:AiOutlineHome,label:"Home"},{icon:FaRegCalendar,label:"Calendar"},{icon:TbFileAnalytics,label:"Analytics"},{icon:CgProfile,label:"Profile"}]
+
+export type FadingCardsProps={
+    Opacity:number,
+    delay:number,
+    icon:IconType,
+    heading:string,
+    content:string,
+    progress:string,
+    y:number
+}
+
+export const FadingCardsArray:FadingCardsProps[]=[
+    {
+        Opacity:1,
+    delay:0,
+    icon:MdOutlineDownloading,
+    heading:"Heading ",
+    content:"Content",
+    progress:"In Progress",
+    y:0     
+    },
+    {
+        Opacity:.7,
+        delay:.6,
+        icon:MdOutlineDownloading,
+        heading:"Heading ",
+        content:"Content",
+        progress:"In Progress",
+        y:130       
+    },
+    {
+        Opacity:.6,
+        delay:.7,
+        icon:MdOutlineDownloading,
+        heading:"Heading ",
+        content:"Content",
+        progress:"In Progress",
+        y:260      
+    },
+    {
+        Opacity:.5,
+        delay:.8,
+        icon:MdOutlineDownloading,
+        heading:"Heading ",
+        content:"Content",
+        progress:"In Progress",
+        y:390          
+    },
+    {
+        Opacity:.4,
+        delay:.9,
+        icon:MdOutlineDownloading,
+        heading:"Heading ",
+        content:"Content",
+        progress:"In Progress",
+        y:520       
+    }
+]
