@@ -4,6 +4,11 @@ import { TbFileAnalytics } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
 import { IconType } from "react-icons";
 import { MdOutlineDownloading } from "react-icons/md";
+import { BsFillLightningChargeFill } from "react-icons/bs";
+import { LuLoaderPinwheel } from "react-icons/lu";
+import { IoMdAnalytics } from "react-icons/io";
+import { MdDashboard } from "react-icons/md";
+
 
 
 export type Feature = {
@@ -89,7 +94,7 @@ export type FadingCardsProps={
     content:string,
     progress:string,
     y:number,
-    bg:string
+    bg:string,
 }
 
 export const FadingCardsArray:FadingCardsProps[]=[
@@ -101,46 +106,47 @@ export const FadingCardsArray:FadingCardsProps[]=[
         content:"Content",
         progress:"In Progress",
         y:0,  
-        bg:"bg-purple-700"   
+        bg:"bg-purple-700"
     },
     {
         Opacity:.5,
         delay:.6,
-        icon:MdOutlineDownloading,
+        icon:BsFillLightningChargeFill,
         heading:"Heading ",
         content:"Content",
         progress:"In Progress",
         y:130,
-        bg:"bg-rose-700"       
+        bg:"bg-rose-700"     
     },
     {
         Opacity:.4,
         delay:.7,
-        icon:MdOutlineDownloading,
+        icon:LuLoaderPinwheel,
         heading:"Heading ",
         content:"Content",
         progress:"In Progress",
         y:260,
-        bg:"bg-emerald-700"      
+        bg:"bg-emerald-700"    
     },
     {
         Opacity:.3,
         delay:.8,
-        icon:MdOutlineDownloading,
+        icon:MdDashboard,
         heading:"Heading ",
         content:"Content",
         progress:"In Progress",
         y:390,
-        bg:"bg-cyan-700"          
+        bg:"bg-cyan-700"         
     },
     {
         Opacity:.2,
         delay:.9,
-        icon:MdOutlineDownloading,
+        icon:IoMdAnalytics,
         heading:"Heading ",
         content:"Content",
         progress:"In Progress",
         y:520,
-        bg:"bg-yellow-700"       
+        bg:"bg-yellow-700"     
+ 
     }
 ]
