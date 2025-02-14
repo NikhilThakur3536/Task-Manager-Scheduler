@@ -21,8 +21,8 @@ const Home = () => {
                     <div className="relative flex z-10 w-[50%] h-full"> 
                         {FadingCardsArray.map((item,index)=>(<FadingCards key={index} {...item}/>))}                       
                         <MainSectionMobile/>
-                        <FloatingCards color={"bg-cyan-200/80"} height={180} width={250} y="400px" x="-70px" y_animate={[10,0,10]}/>
-                        <FloatingCards  color={"bg-purple-300/50"} height={170} width={380} y="30px" x="320px" y_animate={[-10,0,-10]}/>
+                        {/* <FloatingCards color={"bg-white"} height={180} width={250} y="400px" x="-70px" y_animate={[10,0,10]}/>
+                        <FloatingCards  color={"bg-purple-300/50"} height={170} width={380} y="30px" x="320px" y_animate={[-10,0,-10]}/> */}
                     </div>
                 </div>
             </section>

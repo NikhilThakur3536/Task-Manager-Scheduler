@@ -8,7 +8,8 @@ import { BsFillLightningChargeFill } from "react-icons/bs";
 import { LuLoaderPinwheel } from "react-icons/lu";
 import { IoMdAnalytics } from "react-icons/io";
 import { MdDashboard } from "react-icons/md";
-
+import { MobileDashCards } from "@/ui/MobileDashCards";
+import { IoBarChartSharp } from "react-icons/io5";
 
 
 export type Feature = {
@@ -149,4 +150,51 @@ export const FadingCardsArray:FadingCardsProps[]=[
         bg:"bg-yellow-700"     
  
     }
+]
+
+export type MobileDashCardsData={
+    heading:string,
+    content:string
+    icon:IconType,
+    text:string,
+    delay:number,
+    variant: "purple"|"blue"|"emerald"|"fuchsia"
+}
+
+
+export const MobileDashCardsDatAarr:MobileDashCardsData[]=[
+    {
+        heading:"Task Completed",
+        content:"124+",
+        icon:IoBarChartSharp,
+        text:"24 more to be done",
+        variant: "purple",
+        delay:0
+    },
+        {
+            heading:"Frontend Project",
+            content:"424+   ",
+            icon:IoBarChartSharp,
+            text:" In Progress",
+            variant: "emerald",
+            delay:.3
+        },
+        {
+            heading:"Heading 1",
+        content:"12345",
+        icon:IoBarChartSharp,
+        text:" text 1",
+        variant: "blue",
+        delay:.5
+        },
+
+        {
+            heading:"Heading 1",
+            content:"12345",
+            icon:IoBarChartSharp,
+            text:" text 1",
+            variant: "fuchsia",
+            delay:.5
+
+        }
 ]

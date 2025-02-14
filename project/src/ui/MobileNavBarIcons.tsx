@@ -27,7 +27,7 @@ export const MobileNavBarIcons = ({ icon: Icon, label }: IconProps) => {
           animate={{ opacity: 1, y: -10 }}
           exit={{ opacity: 0}}
           transition={{ duration: 0.2 }}
-          className="absolute bottom-10 bg-black font-poppins text-white text-xs px-2 py-1 rounded-lg"
+          className="absolute bottom-10 font-poppins text-yellow-400 text-xs w-fit-content bg-black px-2 py-1 rounded-lg"
         >
           {label}
         </motion.div>
