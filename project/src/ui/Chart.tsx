@@ -19,7 +19,7 @@ import { Chart } from "react-chartjs-2";
 ChartJS.register(CategoryScale, LinearScale, BarElement, LineElement, PointElement, Title, Tooltip, Legend);
 
 
-type CombinedChartData = ChartData<"bar" | "line", number[], string>;
+type CombinedChartData = ChartData<"line"|"bar" , number[], string>;
 
 
 const options: ChartOptions<"bar" | "line"> = {
@@ -27,7 +27,7 @@ const options: ChartOptions<"bar" | "line"> = {
   plugins: {
     title: {
       display: true,
-      text: "Tasks Completed in Every Month"
+      text: "Tasks Completed Every Month"
     }
   },
   scales: {
@@ -50,15 +50,15 @@ const data: CombinedChartData = {
     {
       label: "Front-End",
       data: generateRandomNumbers(7, 0, 100),
-      borderColor: "rgba(255, 99, 132, 1)", // Red
+      borderColor: "rgba(255, 99, 132, 1)",
       backgroundColor: "rgba(255, 99, 132, 0.5)",
       stack: "combined",
-      type: "bar"
+      type: "line"
     },
     {
       label: "Back-End",
       data: generateRandomNumbers(7, 0, 100),
-      borderColor: "rgba(54, 162, 235, 1)", // Blue
+      borderColor: "rgba(54, 162, 235, 1)",
       backgroundColor: "rgba(54, 162, 235, 0.5)",
       stack: "combined",
       type: "line"
@@ -66,13 +66,42 @@ const data: CombinedChartData = {
   ]
 };
 
+const data2:CombinedChartData={
+  labels,
+  datasets: [
+    {
+      label: "Task completed",
+      data: generateRandomNumbers(7, 0, 100),
+      borderColor: "rgba(98, 2, 118, 0.5)", 
+      backgroundColor: "rgba(188, 9, 224, 0.5)",
+      stack: "combined",
+      type: "bar"
+    },
+    {
+      label: "In Progress",
+      data: generateRandomNumbers(7, 0, 100),
+      borderColor: "rgb(4, 61, 99)",
+      backgroundColor: "rgba(0, 153, 255, 0.5)",
+      stack: "combined",
+      type: "bar"
+    }
+  ]
+}
+
 export const BarChart: React.FC = () => {
   return (
         <div>
             
-            <Chart type="bar" data={data} options={options} />;
+            <Chart type="line" data={data} options={options} />;
         </div>
   )
 
-};
-
+}
+ export const AboutSectionMobileChart=()=>{
+    return(
+      <div>  
+        <Chart type="bar" data={data2} options={options} />;
+      </div>
+      
+    )
+ }
