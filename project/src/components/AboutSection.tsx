@@ -27,7 +27,7 @@ export const AboutSection=()=>{
                     </motion.div>
                     </div>
                 </div>
-                <div className=" w-screen h-[30%] flex justify-center my-8">
+                <div className=" w-screen h-[30%] flex justify-center my-4 drop-shadow-lg">
                     <div className="flex justify-around w-[80%]">
                     {ContentData.map((content,index)=>(<AboutContentCards key={index} {...content} />))}
                     </div>

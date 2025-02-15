@@ -30,3 +30,23 @@ export const MobileDashCardsVariants = {
     }
   };
   
+export const AboutContentCardsVariant={
+  purple:{
+    bgColor:"bg-purple-100/30",
+    borderColor:"border-purple-300",
+    shadowColor:"shadow-purple-300/20",
+    textColor:"text-purple-500"
+  },
+  blue:{
+    bgColor:"bg-blue-100/30",
+    borderColor:"border-blue-300",
+    shadowColor:"shadow-blue-300/20",
+    textColor:"text-blue-500"
+  },
+  green:{
+    bgColor:"bg-emerald-100/30",
+    borderColor:"border-emerald-300",
+    shadowColor:"shadow-emerald-300/20",
+    textColor:"text-emerald-500"
+  }
+}

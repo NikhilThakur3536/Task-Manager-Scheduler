@@ -69,13 +69,14 @@ export const pricingData: PricingPlan[] = [
 export type Content={
     id:number,
     heading:string,
-    content:string
+    content:string,
+    variant: "purple"|"blue"|"green"
 }
 
 export const ContentData:Content[]=[
-    {id:11, content:"hyy there", heading:"fuck off"},
-    {id:12, content:"hyy there", heading:"feature"},
-    {id:13, content:"hyy there", heading:"feature"}
+    {id:11, content:"tay organized effortlessly with our intuitive dashboard, where tasks are visually managed and prioritized at a glance.", heading:"Task Dashboard",variant:"blue"},
+    {id:12, content:"Foster seamless teamwork with shared spaces that allow real-time updates, task delegation, and synchronized progress tracking.", heading:"Collaborative Team Spaces",variant:"green"},
+    {id:13, content:"Gain valuable insights into productivity trends and performance metrics to optimize workflows and achieve more.", heading:"Analytics & Insights",variant:"purple"}
 ]
 
 
