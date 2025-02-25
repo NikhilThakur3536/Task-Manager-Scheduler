@@ -8,7 +8,6 @@ import { BsFillLightningChargeFill } from "react-icons/bs";
 import { LuLoaderPinwheel } from "react-icons/lu";
 import { IoMdAnalytics } from "react-icons/io";
 import { MdDashboard } from "react-icons/md";
-import { MobileDashCards } from "@/ui/MobileDashCards";
 import { IoBarChartSharp } from "react-icons/io5";
 
 
