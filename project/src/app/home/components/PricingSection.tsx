@@ -1,8 +1,8 @@
 "use client"
 
-import { GridBG } from "@/ui/GridBG"
-import { PricingCards } from "@/ui/PricingCards"
-import { SectionHeadingBUtton } from "@/ui/SectionHeadingButton"
+import { GridBG } from "@/app/home/ui/GridBG"
+import { PricingCards } from "@/app/home/ui/PricingCards"
+import { SectionHeadingBUtton } from "@/app/home/ui/SectionHeadingButton"
 import { pricingData} from "@/data/Data"
 
 export const PricingSection=()=>{

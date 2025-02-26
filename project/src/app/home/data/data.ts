@@ -1,0 +1,29 @@
+export const FeatureMobiDashData=[{
+    id:1,
+    height:80,
+    width:127,
+    color:"bg-gray-100/50",
+    borderColor:"border-gray-200/70"
+},
+{
+    id:2,
+    height:80,
+    width:127,
+    color:"bg-gray-100/50",
+    borderColor:"border-gray-200/70"
+},
+{
+    id:3,
+    height:80,
+    width:127,
+    color:"bg-gray-100/50",
+    borderColor:"border-gray-200/70"
+},
+{
+    id:4,
+    height:80,
+    width:127,
+    color:"bg-gray-100/50",
+    borderColor:"border-gray-200/70"
+}
+]

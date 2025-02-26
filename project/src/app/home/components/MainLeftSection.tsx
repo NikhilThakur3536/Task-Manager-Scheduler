@@ -1,6 +1,6 @@
 'use client';
 
-import { ProgressBar } from "@/ui/ProgressBar";
+import { ProgressBar } from "@/app/home/ui/ProgressBar";
 
 export const MainLeftSection= ()=>{
     return(

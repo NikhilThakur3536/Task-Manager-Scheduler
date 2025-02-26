@@ -15,7 +15,7 @@ export const AboutSectionMobile=()=>{
                 <div className="font-poppins text-xl font-semibold text-black ml-6 transform -translate-y-1">
                     9:14
                 </div>
-                <div className=" flex gap-1 justiy-between pr-10 ml-2">
+                <div className=" flex gap-1 justiy-between pr-10">
                     <FaSignal color="black" size={20}/>
                     <FaWifi color="black" size={20}/>
                     <CiBatteryFull color="black" size={20}/>

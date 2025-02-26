@@ -1,6 +1,4 @@
-
-
-
+"use client"
 
 type data={
   label:string,

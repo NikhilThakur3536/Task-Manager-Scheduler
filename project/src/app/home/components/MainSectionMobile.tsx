@@ -1,12 +1,12 @@
 "use client"
 
-import { MobileNavBarIcons } from "@/ui/MobileNavBarIcons";
+import { MobileNavBarIcons } from "@/app/home/ui/MobileNavBarIcons";
 import Image from "next/image"
 import { iconArr } from "@/data/Data";
 import { FaSignal } from "react-icons/fa";
 import { FaWifi } from "react-icons/fa";
 import { CiBatteryFull } from "react-icons/ci";
-import { MobileDashCards } from "@/ui/MobileDashCards";
+import { MobileDashCards } from "@/app/home/ui/MobileDashCards";
 import { MobileDashCardsDatAarr } from "@/data/Data";
 import { motion } from "framer-motion";
 

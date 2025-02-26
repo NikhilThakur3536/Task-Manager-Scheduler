@@ -1,4 +1,4 @@
-import { InputFields } from "@/ui/InputFields"
+import { InputFields } from "@/app/home/ui/InputFields"
 
 type Data={
     label:string,

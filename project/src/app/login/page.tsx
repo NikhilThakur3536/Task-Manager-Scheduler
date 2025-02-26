@@ -1,6 +1,6 @@
  'use client';
 
-import { LoginBox } from "@/components/LoginBox";
+import { LoginBox } from "@/app/home/components/LoginBox";
 import {Poppins} from "next/font/google";
 
 const poppins= Poppins({

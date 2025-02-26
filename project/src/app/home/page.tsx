@@ -1,12 +1,12 @@
 'use client'
 
-import { AboutSection } from "@/components/AboutSection";
-import { FeatureSection } from "@/components/FeatureSection";
-import { MainLeftSection } from "@/components/MainLeftSection";
-import { MainSectionMobile } from "@/components/MainSectionMobile";
-import { NavBar } from "@/components/NavBar";
-import { PricingSection} from "@/components/PricingSection";
-import { FadingCards } from "@/ui/FadingCards";
+import { AboutSection } from "@/app/home/components/AboutSection";
+import { FeatureSection } from "@/app/home/components/FeatureSection";
+import { MainLeftSection } from "@/app/home/components/MainLeftSection";
+import { MainSectionMobile } from "@/app/home/components/MainSectionMobile";
+import { NavBar } from "@/app/home/components/NavBar";
+import { PricingSection} from "@/app/home/components/PricingSection";
+import { FadingCards } from "@/app/home/ui/FadingCards";
 import { FadingCardsArray } from "@/data/Data";
 
 const Home = () => {
