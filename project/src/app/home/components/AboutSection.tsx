@@ -16,7 +16,7 @@ export const AboutSection=()=>{
                 </div>
                 <div className=" flex items-center justify-center w-full h-[55%] mt-4">
                     <div className=" relative flex w-[80%] h-full bg-slate-100 rounded-lg border border-slate-400/30 overflow-hidden ">
-                    <div className={`z-1 absolute inset-0 w-full h-full bg-[radial-gradient(circle,_#9ca3af_1px,_transparent_1px)] bg-[size:14px_214px] opacity-30`}></div>        
+                    <div className="z-10 absolute inset-0 w-full h-full bg-[radial-gradient(circle,_#9ca3af_1px,_transparent_1px)] bg-[size:14px_14px] opacity-30"></div>        
                     <AboutSectionMobile/>
                     <motion.div className="z-20 w-[50%] h-[90%] my-4 ml-92 transform translate-x-1/3 bg-white rounded-3xl p-4 drop-shadow-xl border border-slate-300"
                         initial={{y:0}}
