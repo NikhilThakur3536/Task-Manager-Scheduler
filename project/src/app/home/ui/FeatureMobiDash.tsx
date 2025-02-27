@@ -10,7 +10,6 @@ type Props = {
     x?: string; 
     y_animate?:number[],
     color:string,
-    borderColor:string,
     heading:string,
     count:number,
     icon:IconType,
@@ -18,23 +17,21 @@ type Props = {
     animatedBorder:string
 };
 
-export const FeatureMobiDash = ({ height, width, color, borderColor,heading,count,icon:Icon,iconColor,animatedBorder }:Props) => {
+export const FeatureMobiDash = ({ height, width, color,heading,count,icon:Icon,iconColor,animatedBorder }:Props) => {
     return (
-        <div 
-            className="p"
-        >
+        <div>
             <motion.div
-                className={`${color} rounded-xl  border ${borderColor} flex`}
+                className={`${color} rounded-xl  border border-gray-400/50 flex`}
                 style={{ height: `${height}px`, width: `${width}px` }}
                 initial={{scale:0}}
                 whileInView={{scale:1,rotate:360}}
-                whileHover={{borderColor:`${animatedBorder}`,y:-4}}
-                transition={{duration:.9,ease:"linear",type:"spring"}}
+                whileHover={{borderColor:`${animatedBorder}`,y:-4,backgroundColor:"#000000"}}
+                transition={{duration:.9,ease:"linear",type:"spring",}}
             >
-                <div className=' flex flex-col my-2 ml-2 gap-1'>
-                    <h3 className='font-poppins text-gray-600 font-bold'>{heading}</h3>
+                <motion.div className=' flex flex-col my-2 ml-2 gap-1'>
+                    <h3  className='font-poppins text-gray-600 font-bold'>{heading}</h3>
                     <h3 className='font-poppins text-gray-400'>{count}</h3>
-                </div>
+                </motion.div>
                 <div className='ml-4 mt-6'>
                     <Icon className={`${iconColor}`} size={20}/>
                 </div>
