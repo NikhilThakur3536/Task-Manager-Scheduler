@@ -14,7 +14,8 @@ export default {
       },
       fontFamily:{
         poppins:['var(--font-poppins)', 'sans-serif'],
-        montserrat:['var(--font-montserrat)','sans-serif']
+        montserrat:['var(--font-montserrat)','sans-serif'],
+        mulish:['var(--font-muli)','sans-serif']
       }
     },
   },

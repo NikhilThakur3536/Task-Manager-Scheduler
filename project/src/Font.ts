@@ -1,5 +1,6 @@
 import {Montserrat} from "next/font/google";
 import {Poppins} from "next/font/google";
+import { Mulish } from "next/font/google";
 
 const montserrat= Montserrat({
   subsets:['latin'],
@@ -14,3 +15,10 @@ const poppins= Poppins({
     style: ['normal', 'italic'],
     variable: '--font-poppins',
   })
+
+const muli=Mulish({
+  subsets:['latin'],
+  weight:['400','500','900','700'],
+  style: ['normal', 'italic'],
+  variable: '--font-muli',
+})
