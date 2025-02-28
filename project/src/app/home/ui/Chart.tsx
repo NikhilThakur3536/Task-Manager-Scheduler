@@ -100,7 +100,7 @@ export const BarChart: React.FC = () => {
  export const AboutSectionMobileChart=()=>{
     return(
       <div>  
-        <Chart type="bar" data={data2} options={options} />;
+        <Chart type="bar" data={data2} options={options} />
       </div>
       
     )
