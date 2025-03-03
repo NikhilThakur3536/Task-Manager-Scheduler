@@ -9,7 +9,7 @@ export const MainLeftSection= ()=>{
                             <ProgressBar duration={5} />
                             <div><h1 className="font-bold text-5xl font-poppins ml-8 mt-6">Supercharge Team’s<br/> Productivity,<br/>Simplify Task <br/>Management Today</h1></div>
                             <div>
-                                <ul className=" font-montserrat font-[300] text-xl text-slate-600 ml-8 mt-8">
+                                <ul className=" font-muli font-[500] text-lg text-slate-600 ml-8 mt-8">
                                     <li>✅ Role-Based Dashboards for Managers & Employees</li>
                                     <li>✅ Progress Tracking & Performance Insights</li>
                                     <li>✅ Gamification to Reward Top Performers</li>
