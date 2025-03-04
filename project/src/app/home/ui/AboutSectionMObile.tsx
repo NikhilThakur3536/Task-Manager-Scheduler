@@ -21,12 +21,12 @@ export const AboutSectionMobile=()=>{
                     <CiBatteryFull color="black" size={20}/>
                 </div>
             </div>
-            <div className="absolute flex flex-col items-center z-50 w-[348px] h-[500px] bg-white left-20 top-22 transform -translate-x-5.5 rounded-4xl">
-                <div className=" flex justify-around w-[90%] h-[35px] rounded-xl bg-slate-100 border border-slate-300 mt-2">
+            <div className="absolute flex flex-col items-center z-50 w-[344px] h-[500px] bg-white left-18 top-28 transform translate-x-16 rounded-4xl">
+                <div className=" flex justify-around w-[90%] h-[35px] rounded-xl bg-slate-100 border border-slate-300">
                     <input placeholder="Search here" type="text" className=" outline-none bg-slate-100/20 text-black placeholder:text-black border border-slate-300 my-1 pl-8 rounded-lg"/>
                     <div className="w-[32px] h-[30px] p-1 rounded-xl bg-slate-100 transofrm translate-y-[1.5px] border border-slate-300"><IoMdSearch color="black" size={20} className=""/></div>
                 </div>
-                <div className="w-fit-content h-fit-content p-2  bg-white drop-shadow-lg mt-4 border border-slate-300 rounded-lg"><AboutSectionMobileChart/></div>
+                <div className="w-fit-content h-fit-content p-2  bg-white drop-shadow-lg mt-8 border border-slate-300 rounded-lg"><AboutSectionMobileChart/></div>
 
             </div>
         </div>

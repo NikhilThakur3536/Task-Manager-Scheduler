@@ -1,9 +1,9 @@
 'use client'
 
 import { SectionHeadingBUtton } from "@/app/home/ui/SectionHeadingButton"
-import Image from "next/image"
 import { DashBoardFeature } from "../ui/DashBoardFeature"
 import { AnalyticsInsights } from "../ui/Analytics&Insights"
+import { motion } from "framer-motion"
 
 type props={
     position: "left"|"right"
@@ -21,7 +21,11 @@ export const FeatureSection:React.FC<props>=({position})=>{
             <div className="relative w-[50%] h-[60%] bg-slate-100 border border-slate-300/60 rounded-xl overflow-hidden">
                 <div className={`z-1 absolute inset-0 w-full h-full bg-[radial-gradient(circle,_#9ca3af_1px,_transparent_1px)] bg-[size:14px_14px] opacity-30`}></div>
                 <div className=" overflow-hidden">
-                    <Image className="absolute z-40 transform translate-x-1/2 -translate-y-10" src="/images/aboutsectionmobile.png" width={300} height={200} alt="dashboard"/>
+                    <motion.img className="absolute z-40 ml-[150px] transform " src="/images/aboutsectionmobile.png" width={300} height={300} alt="dashboard"
+                    initial={{y:400,opacity:0}}
+                    whileInView={{y:0,opacity:1}}
+                    transition={{duration:.5, ease:"easeOut"}}
+                    />
                 </div>
                 <DashBoardFeature/>
             </div>
@@ -30,7 +34,7 @@ export const FeatureSection:React.FC<props>=({position})=>{
             <div className="relative w-[50%] h-[60%] bg-slate-100 border border-slate-300/60 rounded-xl">
                 <div className={`z-1 absolute inset-0 w-full h-full bg-[radial-gradient(circle,_#9ca3af_1px,_transparent_1px)] bg-[size:14px_14px] opacity-30`}></div>
                 <div className="overflow-hidden">
-                    <Image className="absolute z-40 transform translate-x-1/2 -translate-y-10" src="/images/aboutsectionmobile.png" width={300} height={200} alt="dashboard"/>
+                    <img className="absolute z-40 transform translate-x-1/2 -translate-y-10" src="/images/aboutsectionmobile.png" width={300} height={200} alt="dashboard"/>
                 </div>
                 <AnalyticsInsights/>        
             </div>

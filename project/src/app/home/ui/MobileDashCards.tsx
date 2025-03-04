@@ -19,7 +19,7 @@ export const MobileDashCards=({icon:Icon,heading,content,text,variant,delay}:Mob
                     <h4 className="font-montserrat text-3xl font-bold">{content}</h4>
                     <h6 className="font-montserrat txt-lg text-slate-400">{text}</h6>
                 </div>
-                <div className={`absolute w-fit-content h-fit-content ${styles.iconBg} ${styles.iconColor} rounded-full px-2 py-2 left-62 top-4 transform translate-y-1 border ${styles.iconBorder}`}>
+                <div className={`absolute w-fit-content h-fit-content ${styles.iconBg} ${styles.iconColor} rounded-full px-2 py-2 left-72 top-4 transform translate-y-1 border ${styles.iconBorder}`}>
                     <Icon size={30}/>
                 </div>
             </motion.div>

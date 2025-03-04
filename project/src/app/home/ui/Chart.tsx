@@ -92,7 +92,7 @@ export const BarChart: React.FC = () => {
   return (
         <div>
             
-            <Chart type="line" data={data} options={options} />;
+            <Chart type="line" data={data} options={options} />
         </div>
   )
 

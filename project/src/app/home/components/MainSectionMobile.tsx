@@ -36,7 +36,7 @@ export const MainSectionMobile=()=>{
             <Image src='/images/longmobile.png' alt="right section image" width={500} height={100} />
         </div>
         <motion.div 
-            className=" z-30 bottom-10 left-34 transform translate-x-1 z-21 absolute bg-black w-[45%] h-[50px] rounded-3xl flex justify-around gap-2"
+            className=" z-30 bottom-10 left-32 transform translate-x-4 z-21 absolute bg-black w-[45%] h-[50px] rounded-3xl flex justify-around gap-2"
             initial={{opacity:0}}
             animate={{opacity:1}}
         >
