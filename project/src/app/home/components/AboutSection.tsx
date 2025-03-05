@@ -1,6 +1,6 @@
 import { AboutContentCards } from "@/app/home/ui/AboutContentCards"
 import { SectionHeadingBUtton } from "@/app/home/ui/SectionHeadingButton"
-import { ContentData,Content } from "@/data/Data";
+import { ContentData } from "@/data/Data";
 import { AboutSectionMobile } from "@/app/home/ui/AboutSectionMObile";
 import { BarChart } from "@/app/home/ui/Chart";
 import { motion } from "framer-motion";

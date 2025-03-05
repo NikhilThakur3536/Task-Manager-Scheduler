@@ -1,4 +1,5 @@
 import "./globals.css";
+import { k2d, montserrat,poppins,muli} from "../Font";
 
 export default function RootLayout({
   children,
@@ -6,10 +7,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${k2d.variable || ""} ${montserrat.variable || ""} ${poppins.variable || ""} ${muli.variable || ""}`}
+    >
+      <body>{children}</body>
     </html>
   );
 }

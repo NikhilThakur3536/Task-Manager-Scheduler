@@ -14,7 +14,7 @@ export const FadingCards=({Opacity,delay, icon:Icon,content,heading,progress,y,b
                     <h3 className="font-poppins font-semibold text-slate-900 text-3xl">{heading}</h3>
                     <h4 className="font-montserrat  text-slate-500 text-xl">{content}</h4>
                 </div>
-                <div className="ml-48 w-44 h-10 flex justify-center items-center border border-yellow-500/40 bg-yellow-100 rounded-2xl"><h4 className="text-yellow-700 text-2xl">{progress}</h4></div>
+                <div className="ml-48 mr-2 w-44 h-10 flex justify-center items-center border border-yellow-500/40 bg-yellow-100 rounded-2xl"><h4 className="text-yellow-700 text-2xl">{progress}</h4></div>
             </motion.div>
         </div> 
     )
