@@ -15,7 +15,7 @@ export const FeatureSection:React.FC<props>=({position})=>{
         <div className="w-[80%] h-[60%] flex mt-8">
             <div className=" flex flex-col w-[50%] mt-12 ">
                 <div className="w-[20%] flex justify-center items-center mb-2"><SectionHeadingBUtton Heading={"Feature"}/></div>
-                <h2 className="w-[60%] text-5xl font-montserrat font-lg font-[400]">Task Dashboard</h2>
+                <h2 className="w-[60%] text-5xl font-poppins font-lg font-[400]">Task Dashboard</h2>
                 <p className="w-[80%] mt-6 font-poppins text-lg text-gray-600">Stay on top of your productivity with a sleek and intuitive task dashboard! Track your progress, manage tasks efficiently, and visualize your workflow with real-time insights. Whether it's front-end, back-end, pending, or completed tasks, everything is organized at your fingertips.</p>
             </div>
             <div className="relative w-[50%] h-[60%] bg-slate-100 border border-slate-300/60 rounded-xl overflow-hidden">
@@ -40,7 +40,7 @@ export const FeatureSection:React.FC<props>=({position})=>{
             </div>
             <div className=" flex flex-col  w-[50%] mt-12 ">
                 <div className="w-[20%] flex items-center justify-center self-end mb-2"><SectionHeadingBUtton Heading={"Feature"}/></div>
-                <h2 className="w-[80%] text-5xl font-montserrat font-lg self-end text-right font-[400]">Analytics & Insights</h2>
+                <h2 className="w-[80%] text-5xl font-poppins font-lg self-end text-right font-[400]">Analytics &amp; Insights</h2>
                 <p className="w-[80%] mt-6 font-poppins text-right self-end text-lg text-gray-600">Unlock the power of data-driven decision-making! Gain deep insights into your performance with advanced analytics. Visualize strengths, track progress, and optimize efficiency with detailed charts and performance metrics designed to help you improve every step of the way.</p>
             </div>
         </div>}

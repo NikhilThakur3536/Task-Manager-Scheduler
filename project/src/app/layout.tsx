@@ -1,6 +1,5 @@
 import "./globals.css";
-import { k2d, montserrat,poppins,muli} from "../Font";
-
+import { k2d, montserrat,poppins,muli} from "../font";
 export default function RootLayout({
   children,
 }: Readonly<{
